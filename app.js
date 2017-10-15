@@ -13,7 +13,6 @@ for (let i = 0; i < accordion.length; i++) {
   };
 }
 var particlesJS;
-
 particlesJS('particles-js', {
   'particles': {
     'number': {
