@@ -9,18 +9,28 @@
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:100" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" >
     </head>
     <body>
         <header>
             <nav class="contact-links">
                 <div class="topNav" id="topNav">
                     <a class="left name">Daniel Kato</a>
-                    <a class="left title">Developer</a>
-                    <a class="right tooltip" title="apearmor@gmail.com" href="mailto:apearmor@gmail.com?subject=Hello Daniel!&body=Hello!">Email</a>
-                    
-                    <a class="right hover" target="_blank" href="https://github.com/dankato">GitHub</a>
-                    <a class="right"href="https://www.linkedin.com/in/danielkato/">LinkedIn</a>
+                    <a class="left title" title="awesome web developer">Developer</a>
+
+                    <!-- Email -->
+                    <a class="right tooltip contact-text" id="contact-text" title="apearmor@gmail.com" href="mailto:apearmor@gmail.com?subject=Hello Daniel!&body=Hello!">Email</a>
+                    <a class="right tooltip fa fa-envelope" id="contact-icon" title="apearmor@gmail.com" href="mailto:apearmor@gmail.com?subject=Hello Daniel!&body=Hello!"></a>
+
+                    <!-- GitHub -->
+                    <a class="right hover contact-text" id="contact-text" target="_blank" title="github.com/dankato" href="https://github.com/dankato/">GitHub</a>
+                    <a class="right tooltip fa fa-github" id="contact-icon" target="_blank" title="github.com/dankato" href="https://github.com/dankato/"></a>
+
+                    <!-- LinkedIn -->
+                    <a class="right contact-text" id="contact-text" target="_blank" title="linkedin.com/in/danielkato" href="https://www.linkedin.com/in/danielkato/">LinkedIn</a>
+                    <a class="right tooltip fa fa-linkedin" id="contact-icon" target="_blank" title="linkedin.com/in/danielkato" href="https://www.linkedin.com/in/danielkato/"></a>
+
                 </div>
                 
             </nav>
@@ -32,31 +42,30 @@
         <section class="work" id="work">
             <section class="project-thumbnails">
                 <h3>Projects</h3>
-                <p class="project-description">
+                <!-- <p class="project-description">
                     Click on one.
                 </p>
-                
+                 -->
             </section>
             <section class="project">
 
-
-                
-
-                <button class="project-stack accordion" aria-hidden="true">Project 1</button>
+                <button class="project-stack accordion" aria-hidden="true">Project: Observer Dashboard</button>
                
                 <div class="panel">
-                    <div class="flex-container">
-
-                        <div class="flex-item project-name">
-                            <p>Observer Dashboard</p>
+                    <div class="flex-container projects">
+                        <div>
+                            <a href="path-to-the-image">
+                              <figure>
+                                <img src="assets/find-smithy.png" alt="">
+                              </figure>
+                            </a>
                         </div>
-                        <div class="flex-item project-buttons">
-                                <a href="https://github.com/dankato/Observer-Dashboard" target="_blank">Source Code</a>
-                                <a href="https://tranquil-plateau-10397.herokuapp.com/" target="_blank">Live Demo</a>
-                        </div>
-
                         <div class="flex-item project-description">
                                 <p> A simple gui dashboard that students can view and contribute to by adding useful resources such as links posted in slack, or material shared by mentors. Built with MongoDB, Express, React, Redux and Node.js</p>
+                        </div>
+                        <div class="flex-item project-buttons">
+                            <a href="https://github.com/dankato/Observer-Dashboard" target="_blank">Source Code</a>
+                            <a href="https://tranquil-plateau-10397.herokuapp.com/" target="_blank">Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +118,15 @@
                     </div>
                 </div>
                 
+                <button class="project-stack accordion">Tech</button>
+                <div class="panel">
+                    <div class="flex-container">
 
+                        <div class="flex-item">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                    </div>
+                </div>
 
 
 
