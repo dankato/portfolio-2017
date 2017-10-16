@@ -50,8 +50,11 @@ nav {
     padding: 14px 16px;
 }
 
-.name {
-    font-weight: bolder;
+#name {
+    font-family: 'Caveat', cursive;
+    font-size: 19px;
+    line-height: 100%;
+    color: white;
 }
 
 .work h3 {
@@ -78,8 +81,9 @@ footer {
 button.accordion {
     background-color: #52686A;
     color: #FFDED5;
+    opacity: 0.8;
     cursor: pointer;
-    padding: 14px;
+    padding: 10px;
     width: 100%;
     border: none;
     text-align: left;
@@ -158,8 +162,8 @@ div.panel {
 .project-name,
 .project-buttons,
 .project-description {
-    padding: 5px;
-    /* text-align: center; */
+    /* padding: 5px; */
+
 }
 
 .project-buttons {
@@ -171,21 +175,29 @@ img {
     margin-bottom: 8px;
     width: calc(100% - 4px);
     display: block;
-    margin: auto;
-
+    margin: auto; 
 }
-
+.project-description u {
+    color: #FFDED5;
+}
+.flex-item u {
+    color: #FFDED5;
+    font-size: 26px;
+    font-weight: bold;
+}
 
 .project-buttons a {
     font-size: 16px; 
     display: inline-block;
     text-decoration: none;
     color: white;
-    margin: 0px 50px 0px 0px;
+    padding: 8px 16px;   
+    margin: 0px 50px 0px 0px; 
 }
 
 .project-buttons a:hover {
     background-color: #FFDED5;
+    padding: 8px 16px;
     color: #52686A;
 }
 

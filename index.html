@@ -8,6 +8,7 @@
         <title>Daniel Kato</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico" />
         <!-- <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" >
@@ -16,7 +17,7 @@
         <header>
             <nav class="contact-links">
                 <div class="topNav" id="topNav">
-                    <a class="left name">Daniel Kato</a>
+                    <a class="left name" id="name">Daniel Kato</a>
                     <a class="left title" title="awesome web developer">Developer</a>
 
                     <!-- Email -->
@@ -35,7 +36,7 @@
                 
             </nav>
             <p class="about" id="about">
-                Hi, I'm Daniel, a full-stack web developer from the Bay Area. I started out as an art student, did a couple QA tours at SEGA & EA and made the switch to production at Zynga, building a couple flagship titles. From there, decided to make a career pivot to web/mobile development where the desire spawned from way back when attending art school. Now with rigorous training with JavaScript, React and Node.js, I am ready to start building a career as a developer.
+                Hi, i'm a full-stack web developer from the Bay Area. I started out as an art student, did a couple QA tours at SEGA & EA and made the switch to production at Zynga, building a couple flagship titles. From there, decided to make a career pivot to web/mobile development where the desire spawned from way back when attending art school. Now with rigorous training with JavaScript, React and Node.js, I am ready to start building a career as a developer.
             </p>
 
         </header>
@@ -49,19 +50,18 @@
             </section>
             <section class="project">
 
-                <button class="project-stack accordion" aria-hidden="true">Observer Dashboard</button>
-               
+                <button class="project-stack accordion" aria-hidden="true">Resource gathering app for cohorts</button>
                 <div class="panel">
                     <div class="flex-container projects">
                         <div>
-                            <a href="path-to-the-image">
-                              <figure>
+                
                                 <img src="assets/observer-dashboard.png" alt="">
-                              </figure>
-                            </a>
+              
                         </div>
                         <div class="flex-item project-description">
-                                <p> A simple gui dashboard that students can view and contribute to by adding useful resources such as links posted in slack, or material shared by mentors. Built with MongoDB, Express, React, Redux and Node.js</p>
+                                <p><u>Observer Dashboard</u> A simple gui dashboard that students can view and contribute to by adding useful resources such as links posted in slack, or material shared by mentors.</p>
+                                <p>Built with MongoDB, Express, React, Redux and Node.js</p>
+                                <hr />
                         </div>
                         <div class="flex-item project-buttons">
                             <a href="https://github.com/dankato/Observer-Dashboard" target="_blank">Source Code</a>
@@ -70,8 +70,7 @@
                     </div>
                 </div>
 
-                <button class="project-stack accordion" aria-hidden="true">Find Smithy</button>
-                
+                <button class="project-stack accordion" aria-hidden="true">Crowd-source hard to find products</button>
                 <div class="panel">
                     <div class="flex-container projects">
                         <div>
@@ -82,7 +81,9 @@
                             </a>
                         </div>
                         <div class="flex-item project-description">
-                               <p> A simple gui dashboard that students can view and contribute to by adding useful resources such as links posted in slack, or material shared by mentors. Built with MongoDB, Express, React, Redux and Node.js</p>
+                               <p><u>Find Smithy</u> A simple gui dashboard that students can view and contribute to by adding useful resources such as links posted in slack, or material shared by mentors.</p> 
+                               <p>Built with MongoDB, Express, React, Redux, Passport and Node.js</p>
+                               <hr />
                         </div>
                         <div class="flex-item project-buttons">
                             <a href="https://github.com/dankato/Observer-Dashboard" target="_blank">Source Code</a>
@@ -91,8 +92,7 @@
                     </div>
                 </div>
                 
-                <button class="project-stack accordion" aria-hidden="true">Pentacles Fox</button>
-                
+                <button class="project-stack accordion" aria-hidden="true">Photo-sharing Service</button>
                 <div class="panel">
                     <div class="flex-container projects">
                         <div>
@@ -103,7 +103,9 @@
                             </a>
                         </div>
                         <div class="flex-item project-description">
-                               <p> A simple image sharing app that hosts images by storing data online and communicate between users. Built with Swift 3, Parse Server & AWS EC2</p>
+                               <p><u>Pentacles Fox</u> A simple image sharing app that hosts images by storing data online and communicate between users.</p>
+                               <p>Built with Swift 3, Parse Server & AWS EC2</p>
+                               <hr />                               
                         </div>
                         <div class="flex-item project-buttons">
                             <a href="https://github.com/dankato/Photo-Roll" target="_blank">Source Code</a>
@@ -111,7 +113,7 @@
                     </div>
                 </div>
 
-                <button class="project-stack accordion">Study Hard</button>
+                <button class="project-stack accordion">Space Repetition Learning</button>
                 <div class="panel">
                     <div class="flex-container projects">
                         <div>
@@ -122,7 +124,9 @@
                             </a>
                         </div>
                         <div class="flex-item project-description">
-                               <p> A spaced repetition study app for student to help them prep for data structures & algorithms exams.   Built with MongoDB, Express, React, Redux, Node.js, Travis CI, mlab & Heroku.</p>
+                               <p><u>Study Hard</u> A spaced repetition study app for student to help them prep for data structures & algorithms exams.</p>
+                               <p>Built with MongoDB, Express, React, Redux, Node.js, Travis CI, mlab & Heroku.</p>
+                               <hr/>
                         </div>
                         <div class="flex-item project-buttons">
                             <a href="https://github.com/dankato/Spaced-Repetition" target="_blank">Source Code</a>
@@ -130,7 +134,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="project-stack accordion">Gif Storytelling</button>
+
+                <button class="project-stack accordion">Storytelling using GIPHY API</button>
                 <div class="panel">
                     <div class="flex-container projects">
                         <div>
@@ -141,7 +146,9 @@
                             </a>
                         </div>
                         <div class="flex-item project-description">
-                               <p> A small project incorporating data from GIPHY API. Built with HTML, CSS & JavaScript</p>
+                               <p><u>Gif Storytelling</u> A small project incorporating data from GIPHY API.</p>
+                               <p>Built with HTML, CSS & Vanilla JavaScript</p>
+                               <hr/>
                         </div>
                         <div class="flex-item project-buttons">
                             <a href="https://github.com/thinkful-c11/Gif-Storytelling" target="_blank">Source Code</a>
@@ -149,14 +156,15 @@
                         </div>
                     </div>
                 </div>
+
                 <button class="project-stack accordion"><i class="fa fa-cog fa-spin fa-fw"></i> Tech Skills</button>
                 <div class="panel">
                     <div class="flex-container">
 
                         <div class="flex-item">
-                                <p>Technical Skills: HTML5, CSS3, JavaScript ES6</p>
-                                <p>Technologies: ReactJS, Redux, NodeJS, Express, MongoDB, Mocha/Chai, RESTful API, Git, Heroku, AWS</p>
-                                <p>Skills: Project Management, Spec Design, Wireframing, MVP, </p>
+                                <p><u>Technical Skills</u> HTML, CSS, JavaScript ES6</p>
+                                <p><u>Technologies</u> ReactJS, Redux, NodeJS, Express, MongoDB, Mocha/Chai, Travis CI, Passport, OAuth, Socket.io, jQuery, RESTful API, Git, Heroku, AWS</p>
+                                <p><u>Skills</u> Project Management, Agile Development, Spec & Wireframing Design, UX sensibilities, MVP, </p>
                         </div>
                     </div>
                 </div>
