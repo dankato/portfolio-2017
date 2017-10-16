@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" >
     </head>
     <body>
-        <header>
-            <nav class="contact-links">
+        <header role="banner">
+            <nav role="navigation" class="contact-links">
                 <div class="topNav" id="topNav">
                     <a class="left name" id="name">Daniel Kato</a>
                     <a class="left title" title="awesome web developer">Developer</a>
@@ -40,6 +40,8 @@
             </p>
 
         </header>
+
+        <main role="main">
         <section class="work" id="work">
             <section class="project-thumbnails">
                 <h3>Projects</h3>
@@ -55,7 +57,7 @@
                     <div class="flex-container projects">
                         <div>
                 
-                                <img src="assets/observer-dashboard.png" alt="">
+                                <img src="assets/observer-dashboard.png" alt="Observer Dashboard Screenshot">
               
                         </div>
                         <div class="flex-item project-description">
@@ -76,7 +78,7 @@
                         <div>
                             <a href="path-to-the-image">
                                 <figure>
-                                <img src="assets/find-smithy.png" alt="">
+                                <img src="assets/find-smithy.png" alt="Find Smithy Screenshot">
                                 </figure>
                             </a>
                         </div>
@@ -98,7 +100,7 @@
                         <div>
                             <a href="path-to-the-image">
                                 <figure>
-                                <img src="assets/penticles-fox.png" alt="">
+                                <img src="assets/penticles-fox.png" alt="Penticles Fox iOS app Screenshot">
                                 </figure>
                             </a>
                         </div>
@@ -119,7 +121,7 @@
                         <div>
                             <a href="path-to-the-image">
                                 <figure>
-                                <img src="assets/study-hard.png" alt="">
+                                <img src="assets/study-hard.png" alt="Spaced Repetition Study App Screenshot">
                                 </figure>
                             </a>
                         </div>
@@ -141,7 +143,7 @@
                         <div>
                             <a href="path-to-the-image">
                                 <figure>
-                                <img src="assets/gif-storytelling.png" alt="">
+                                <img src="assets/gif-storytelling.png" alt="Gif Storytelling Screenshot">
                                 </figure>
                             </a>
                         </div>
@@ -160,7 +162,6 @@
                 <button class="project-stack accordion"><i class="fa fa-cog fa-spin fa-fw"></i> Tech Skills</button>
                 <div class="panel">
                     <div class="flex-container">
-
                         <div class="flex-item">
                                 <p><u>Technical Skills</u> HTML, CSS, JavaScript ES6</p>
                                 <p><u>Technologies</u> ReactJS, Redux, NodeJS, Express, MongoDB, Mocha/Chai, Travis CI, Passport, OAuth, Socket.io, jQuery, RESTful API, Git, Heroku, AWS</p>
@@ -170,15 +171,11 @@
                 </div>
 
             </section>
-
-
-
         </section>
-
+        </main>
+        
         <!-- particles.js container --> 
         <div id="particles-js"></div> 
-
-        <script src="app.js"></script>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
         <script type="text/javascript" src="app.js"></script>   
     </body>
