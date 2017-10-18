@@ -1,27 +1,28 @@
 body {
     color: #F8F6F6;
     font-family: 'Roboto', 'Open Sans', sans-serif;
-    /* padding: 30px; */
+    padding: 30px;
     max-width: 800px;
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
-
-header h1 {
-    color: #F8F6F6;
-}
-
-header h4 {
-    color: #CF4647;
-}
-
-header li {
-    color: #F8F6F6;
-}
-
+/* ---- Nav Bar ---- */
 nav {
     overflow: hidden;
+}
+.topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#name {
+    /* font-family: 'Caveat', cursive; */
+    /* align-items: center; */
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 42px;
+    line-height: 100%;
+    color: white;
 }
 
 .topNav a {
@@ -34,11 +35,11 @@ nav {
 }
 
 .right:hover {
-    background-color: #ddd;
+    background-color: #FFDED5;
     color: black;
-    -webkit-transition-duration: 1.2s;
+    -webkit-transition-duration: 250ms;
     /* Safari */
-    transition-duration: 1.2s;
+    transition-duration: 250ms;
 }
 
 .topNav a.right {
@@ -46,38 +47,24 @@ nav {
     padding: 14px 16px;
 }
 
+/* ---- About section ---- */
 .about {
-    padding: 14px 16px;
+    padding: 0 20px;
+    line-height: 1.4;
+    font-weight: 900;
 }
 
-#name {
-    font-family: 'Caveat', cursive;
-    font-size: 19px;
-    line-height: 100%;
-    color: white;
+.work {
+    padding: 14px 16px;
 }
 
 .work h3 {
     color: #FFDED5;
+    margin: 5px;
 }
 
-line {
-    color: #FFDED5;
-}
 
-section li {
-    color: #F8F6F6
-}
-
-.work {
-    padding: 16px 14px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-}
-
+/* ---- Project container ---- */
 button.accordion {
     background-color: #52686A;
     color: #FFDED5;
@@ -108,40 +95,55 @@ button.accordion:after {
 
 button.accordion.active:after {
     content: "X";
+    color: white;
     /* Unicode character for "minus" sign (-) */
     font-size: 12px;
 }
 
+
+/* ---- Project contents ---- */
 div.panel {
-    padding: 10px 30px;
+    padding: 10px;
     display: none;
     background-color: #ACBDC5;
+    /* background-color: white; */
     opacity: 0.9;
     color: #FFDED5;
+    font-family: 'system-ui', 'Roboto', 'Open Sans', sans-serif;
+}
+/* 
+.project-description {
+    color: black;
+}
+.app-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: black;
 }
 
+.app-keywords {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: black;
+}
 
-/* ---- mm colors ---- 
-#2A363B - black
-#CF4647 - red
-#F5D061 - yellow
-#F8F6F6 - white
+.app-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.app-tech-list {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+} 
 */
 
 
-/* ---- particles.js container ---- */
-
-#particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #314A52;
-    /* background-color: #281617;  */
-    z-index: -50;
-}
-
+/* ---- project expanded ---- */
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -156,29 +158,29 @@ div.panel {
     justify-content: center;
     width: auto;
     height: auto;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .project-name,
 .project-buttons,
 .project-description {
-    /* padding: 5px; */
-
+    padding: 5px;
 }
 
 .project-buttons {
-    /* font-size: 15px; */
+    font-size: 15px;
 }
 
 img {
     /* display: inline-block; */
-    margin-bottom: 8px;
-    width: calc(100% - 4px);
+    /* margin-bottom: 8px; */
+    width: calc(90% - 4px);
     display: block;
-    margin: auto; 
+    margin: -30px auto; 
 }
-.project-description u {
-    color: #FFDED5;
+.project-description {
+    padding: 30px;
+
 }
 .flex-item u {
     color: #FFDED5;
@@ -186,13 +188,21 @@ img {
     font-weight: bold;
 }
 
+hr {
+    border : 0;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); 
+}
+
 .project-buttons a {
     font-size: 16px; 
     display: inline-block;
     text-decoration: none;
+    background-color: #a2b2b9;
     color: white;
     padding: 8px 16px;   
-    margin: 0px 50px 0px 0px; 
+    margin: 0px 50px 0px -4px; 
+    /* border: 1px solid white; */
 }
 
 .project-buttons a:hover {
@@ -200,14 +210,6 @@ img {
     padding: 8px 16px;
     color: #52686A;
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 100em) {
@@ -226,7 +228,7 @@ img {
 
 /* Smartphones (portrait and landscape) ----------- */
 /* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { */
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     
     img {
         width: calc(90% - 6px);
@@ -239,20 +241,61 @@ img {
     #contact-icon {
         /* display: ""; */
     }
+
+
+
+    button.accordion {
+
+        padding: 10px;
+        font-size: 12px;
+        transition: 250ms;
+    }
+
+
 }
 
-    
 @media only screen and (min-width: 481px) {
-
-        img {
-          width: calc(90% - 6px);
-        }
-    
-        /* #contact-text {
-            display: "";
-        } */
-    
-        #contact-icon {
-            display: none;
-        }
+    img {
+      width: calc(90% - 6px);
     }
+
+    /* #contact-text {
+        display: "";
+    } */
+
+    #contact-icon {
+        display: none;
+    }
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    /* background-color: #314A52; */
+    /* background-color: #281617;  */
+    z-index: -50;
+
+    background: #314A52; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #272f31, #314A52); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #272f31, #314A52); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #272f31, #314A52); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom top, #272f31, #314A52); /* Standard syntax (must be last) */
+}
+
+/* ---- footer ---- */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---- mm colors ---- 
+#2A363B - black
+#CF4647 - red
+#F5D061 - yellow
+#F8F6F6 - white
+*/
