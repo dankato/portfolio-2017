@@ -178,8 +178,15 @@ img {
     display: block;
     margin: -30px auto; 
 }
+
+.pentfox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
 .project-description {
-    padding: 30px;
+    padding: 10px 0 0 30px;
 
 }
 .flex-item u {
@@ -201,16 +208,19 @@ hr {
     background-color: #a2b2b9;
     color: white;
     padding: 8px 16px;   
-    margin: 0px 50px 0px -4px; 
+    margin: 0px 50px 10px -4px; 
     /* border: 1px solid white; */
 }
 
 .project-buttons a:hover {
     background-color: #FFDED5;
-    padding: 8px 16px;
-    color: #52686A;
+    /* padding: 8px 16px; */
+    color: #a2b2b9;
 }
 
+.app-tech-list {
+    color: #52686A;
+}
 
 @media screen and (min-width: 100em) {
     img {
