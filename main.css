@@ -49,9 +49,9 @@ nav {
 }
 
 #clipboard {
-    /* padding-left: 0;
-    margin: 3px; */
-    
+    line-height: 21px;
+    color: #d4c9c7;
+    font-size: 15px;
 }
 
 
