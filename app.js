@@ -12,6 +12,21 @@ for (let i = 0; i < accordion.length; i++) {
     }
   };
 }
+
+function doCopy() {
+  var copyText = document.getElementById('copyText');
+  copyText.select();
+  try{
+    var successful = document.execCommand('copy');
+    var message = successful ? 'successful':'unsuccessful';
+    console.log('copied'); 
+  } catch (err){
+    console.log('error when copying');
+  }
+}
+$(function(){
+  new Clipboard('.copy-text');
+});
 var particlesJS;
 particlesJS('particles-js', {
   'particles': {

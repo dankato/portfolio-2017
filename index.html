@@ -23,9 +23,12 @@
                     <!-- <a class="left title" title="awesome web developer">Developer</a> -->
 
                     <!-- Email -->
-                    <a class="right tooltip contact-text" id="contact-text" title="apearmor@gmail.com" href="mailto:apearmor@gmail.com?subject=Hello Daniel!&body=Hello!">Email</a>
+                    <div class="copy">
+                        <a class="right copy-text fa fa-clipboard" data-clipboard-target="#contact-text" id="clipboard" href="#"></a>
+                        <a class="right tooltip contact-text" id="contact-text" title="apearmor@gmail.com" data-clipboard-target="apearmor@gmail.com">apearmor@gmail.com</a>
+                    </div>
                     <a class="right tooltip fa fa-envelope" id="contact-icon" title="apearmor@gmail.com" href="mailto:apearmor@gmail.com?subject=Hello Daniel!&body=Hello!"></a>
-
+   
                     <!-- GitHub -->
                     <a class="right hover contact-text" id="contact-text" target="_blank" title="github.com/dankato" href="https://github.com/dankato/">GitHub</a>
                     <a class="right tooltip fa fa-github" id="contact-icon" target="_blank" title="github.com/dankato" href="https://github.com/dankato/"></a>
@@ -116,7 +119,7 @@
                             <img class="pentfox" src="assets/study-hard.bmp" alt="Spaced Repetition Study App Screenshot">
                             <h2 class="app-title"><b>Study Hard</h2><b></h2>
                             <p class="app-keywords">SPACED REPETITON LEARNING</p>
-                            <p class="app-description">A spaced repetition study app for student to help them prep for data structures & algorithms exams.</p>
+                            <p class="app-description">A spaced repetition study app for students to help them prep for data structures & algorithms exams.</p>
                             <p class="app-tech-list">Built with <b>MongoDB, Express, React, Redux, Node.js, Travis CI, mlab & Heroku.</b></p>
                             <hr />
                             <div class="flex-item project-buttons">
@@ -160,10 +163,16 @@
         </section>
         </main>
         
-        <!-- particles.js container --> 
+        <!-- particles.js --> 
         <div id="particles-js"></div> 
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-        <script type="text/javascript" src="app.js"></script>   
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <!-- copy to clipboard -->       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+        
     </body>
 
 </html>

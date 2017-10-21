@@ -48,6 +48,13 @@ nav {
     padding: 14px 16px;
 }
 
+#clipboard {
+    /* padding-left: 0;
+    margin: 3px; */
+    
+}
+
+
 /* ---- About section ---- */
 .about {
     padding: 0 20px;
@@ -211,7 +218,7 @@ hr {
 
 /* Smartphones (portrait and landscape) ----------- */
 /* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 645px) {
     
     img {
         width: calc(90% - 6px);
@@ -224,6 +231,9 @@ hr {
     #contact-icon {
         /* display: ""; */
     }
+    #clipboard {
+        display: none;
+    }
 
     button.accordion {
 
@@ -233,7 +243,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 646px) {
     img {
       width: calc(90% - 6px);
     }
