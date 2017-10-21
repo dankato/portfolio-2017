@@ -85,7 +85,7 @@ button.accordion {
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: 0.4s;
+    transition: 0.9s;
     font-size: 18px;
 }
 
@@ -108,18 +108,23 @@ button.accordion.active:after {
     color: white;
     /* Unicode character for "minus" sign (-) */
     font-size: 12px;
+    padding: 3px;
 }
 
 /* ---- Project contents ---- */
 div.panel {
-    padding: 10px;
-    display: none;
+    /* padding: 10px; */
+    /* display: none; */
+    max-height: 0;
     background-color: #ACBDC5;
     /* background-color: white; */
     opacity: 0.9;
     color: #FFDED5;
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'system-ui', 'Roboto', 'Open Sans', sans-serif; */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: block;
 }
 
 /* ---- project expanded ---- */
@@ -137,6 +142,7 @@ div.panel {
     justify-content: center;
     width: auto;
     height: auto;
+    padding-bottom: 20px;
     /* margin: 10px; */
 }
 
@@ -256,6 +262,11 @@ hr {
         display: none;
     }
 }
+@media only screen and (max-height: 800px) {
+    footer {
+        display: none;
+    }
+}
 
 /* ---- particles.js container ---- */
 
@@ -277,10 +288,11 @@ hr {
 }
 
 /* ---- footer ---- */
-footer {
-    position: absolute;
-    bottom: 0;
-}
+/* footer { */
+    /* position: relative; */
+    /* bottom: 0; */
+    /* clear: both; */
+/* } */
 
 /* ---- mm colors ---- 
 #2A363B - black
